@@ -3,6 +3,7 @@ import base64
 import requests
 import binascii
 import os
+import datetime
 
 # Define a fixed timeout for HTTP requests
 TIMEOUT = 20  # seconds
@@ -77,30 +78,30 @@ def main():
 
     protocols = ["vmess", "vless", "trojan", "ss", "ssr", "hy2", "tuic", "warp://"]
     links = [
-        "https://raw.githubusercontent.com/MrPooyaX/VpnsFucking/main/BeVpn.txt",
-        "https://raw.githubusercontent.com/yebekhe/TVC/main/subscriptions/xray/base64/mix",
-        "https://raw.githubusercontent.com/ALIILAPRO/v2rayNG-Config/main/sub.txt",
+        # "https://raw.githubusercontent.com/ALIILAPRO/Proxy/main/http.txt",
+        # "https://raw.githubusercontent.com/ALIILAPRO/Proxy/main/socks4.txt"
+        # "https://raw.githubusercontent.com/ALIILAPRO/Proxy/main/socks5.txt"
         "https://raw.githubusercontent.com/mfuu/v2ray/master/v2ray",
-        "https://raw.githubusercontent.com/soroushmirzaei/telegram-configs-collector/main/protocols/reality",
-        "https://raw.githubusercontent.com/soroushmirzaei/telegram-configs-collector/main/protocols/vless",
+        # "https://raw.githubusercontent.com/soroushmirzaei/telegram-configs-collector/main/protocols/reality",
+        # "https://raw.githubusercontent.com/soroushmirzaei/telegram-configs-collector/main/protocols/vless",
         "https://raw.githubusercontent.com/soroushmirzaei/telegram-configs-collector/main/protocols/vmess",
-        "https://raw.githubusercontent.com/soroushmirzaei/telegram-configs-collector/main/protocols/trojan",
-        "https://raw.githubusercontent.com/soroushmirzaei/telegram-configs-collector/main/protocols/shadowsocks",
-        "https://raw.githubusercontent.com/ts-sf/fly/main/v2",
-        "https://raw.githubusercontent.com/aiboboxx/v2rayfree/main/v2",
-        "https://mrpooya.top/SuperApi/BE.php",
-        "https://raw.githubusercontent.com/MrPooyaX/VpnsFucking/main/BeVpn.txt"
+        # "https://raw.githubusercontent.com/soroushmirzaei/telegram-configs-collector/main/protocols/trojan",
+        # "https://raw.githubusercontent.com/soroushmirzaei/telegram-configs-collector/main/protocols/shadowsocks",
+        # "https://raw.githubusercontent.com/ts-sf/fly/main/v2",
+        # "https://mrpooya.top/SuperApi/BE.php",
+        f"https://clashgithub.com/wp-content/uploads/rss/{date1}.txt",
+        "https://cdn.jsdelivr.net/gh/xiaoji235/airport-free/v2ray/wenode.txt",
+        "https://raw.githubusercontent.com/Barabama/FreeNodes/master/nodes/merged.txt",
+        f"https://v2rayw.github.io/uploads/{years}/{months}/0-{date1}.txt"
     ]
     dir_links = [
-        "https://raw.githubusercontent.com/IranianCypherpunks/sub/main/config",
-        "https://raw.githubusercontent.com/sashalsk/V2Ray/main/V2Config",
-        "https://raw.githubusercontent.com/mahdibland/ShadowsocksAggregator/master/Eternity.txt",
-        "https://raw.githubusercontent.com/itsyebekhe/HiN-VPN/main/subscription/normal/mix",
-        "https://raw.githubusercontent.com/sarinaesmailzadeh/V2Hub/main/merged",
-        "https://raw.githubusercontent.com/freev2rayconfig/V2RAY_SUBSCRIPTION_LINK/main/v2rayconfigs.txt",
-        "https://raw.githubusercontent.com/Everyday-VPN/Everyday-VPN/main/subscription/main.txt",
-        "https://raw.githubusercontent.com/C4ssif3r/V2ray-sub/main/all.txt",
-        "https://mrpooya.top/SuperApi/V7pRO.php"
+        # "https://raw.githubusercontent.com/IranianCypherpunks/sub/main/config",
+        "https://raw.githubusercontent.com/mahdibland/V2RayAggregator/blob/master/Eternity.txt",
+        # "https://raw.githubusercontent.com/sarinaesmailzadeh/V2Hub/main/merged",
+        # "https://raw.githubusercontent.com/freev2rayconfig/V2RAY_SUBSCRIPTION_LINK/main/v2rayconfigs.txt",
+        "https://raw.githubusercontent.com/Everyday-VPN/Everyday-VPN/refs/heads/main/subscription/main.txt",
+        # "https://raw.githubusercontent.com/C4ssif3r/V2ray-sub/main/all.txt",
+        # "https://mrpooya.top/SuperApi/V7pRO.php"
     ]
 
     decoded_links = decode_links(links)
