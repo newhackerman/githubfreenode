@@ -7,7 +7,7 @@ on:
       - main
   schedule:
     # Run every 10 minutes
-    - cron: "*/10 * * * *"
+    - cron: "*/30 * * * *"
 
 jobs:
   build:
@@ -48,8 +48,8 @@ jobs:
       with:
         author_name: "Github Actions"
         author_email: "actions@github.com"
-        message: "Updated 9 minutes Ago ⚡️"
+        message: "Updated 29 minutes Ago ⚡️"
         add: "."
-        push: "https://github.com/barry-far/V2ray-Configs.git"
+        push: "https://github.com/newhackerman/githubfreenode.git"
     env:
       GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
